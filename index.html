@@ -1,223 +1,57 @@
 <!DOCTYPE html>
 <html lang="he">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>אתר מקצועי למפתח מערכות</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
-
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-    font-family: 'Assistant', sans-serif;
-    background: #0f1c2d;
-    color: #e1e8f0;
-    direction: rtl;
-  }
-  header {
-    background: #12263f;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header h1 {
-    font-weight: 700;
-    font-size: 24px;
-    color: #1bd1e6;
-  }
-  nav a {
-    color: #a1b9d9;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: 600;
-    transition: color 0.3s;
-  }
-  nav a:hover {
-    color: #1bd1e6;
-  }
-  .hero {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 60px 40px;
-    background: linear-gradient(135deg, #12263f 0%, #1b3a68 100%);
-  }
-  .hero-text {
-    flex: 1 1 400px;
-  }
-  .hero-text h2 {
-    font-size: 3rem;
-    margin: 0 0 20px;
-    line-height: 1.1;
-    color: #1bd1e6;
-  }
-  .hero-text p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    color: #d1dff3;
-  }
-  .btn-primary {
-    background: #1bd1e6;
-    color: #0f1c2d;
-    border: none;
-    padding: 15px 35px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    border-radius: 30px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(27, 209, 230, 0.5);
-    transition: background 0.3s ease;
-  }
-  .btn-primary:hover {
-    background: #0ec4d7;
-  }
-  .hero-image {
-    flex: 1 1 400px;
-    text-align: center;
-  }
-  .hero-image img {
-    max-width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 8px 30px rgba(27, 209, 230, 0.4);
-    animation: float 6s ease-in-out infinite;
-  }
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
-  }
-  section {
-    padding: 50px 40px;
-  }
-  section h3 {
-    font-size: 2rem;
-    color: #1bd1e6;
-    margin-bottom: 25px;
-    border-bottom: 3px solid #1bd1e6;
-    display: inline-block;
-    padding-bottom: 5px;
-  }
-  .services, .portfolio {
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .card {
-    background: #12263f;
-    border-radius: 15px;
-    padding: 25px;
-    flex: 1 1 280px;
-    box-shadow: 0 8px 25px rgba(27, 209, 230, 0.25);
-    transition: transform 0.3s ease;
-  }
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 35px rgba(27, 209, 230, 0.5);
-  }
-  .card h4 {
-    margin-top: 0;
-    color: #1bd1e6;
-    font-size: 1.5rem;
-  }
-  .card p {
-    font-size: 1rem;
-    color: #d1dff3;
-  }
-  footer {
-    background: #0b1626;
-    color: #71839a;
-    text-align: center;
-    padding: 25px 15px;
-    font-size: 0.9rem;
-  }
-  /* Responsive */
-  @media (max-width: 768px) {
-    .hero {
-      flex-direction: column;
-      text-align: center;
-    }
-    .hero-text, .hero-image {
-      flex: 1 1 100%;
-    }
-    nav a {
-      margin-left: 10px;
-      font-size: 0.9rem;
-    }
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>העסק המודרני שלך</title>
 </head>
 <body>
+  <header>
+    <h1>העסק המודרני שלך</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">אודות</a></li>
+        <li><a href="#services">שירותים</a></li>
+        <li><a href="#testimonials">לקוחות</a></li>
+        <li><a href="#contact">צור קשר</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-  <h1>פיתוח מערכות מקצועי</h1>
-  <nav>
-    <a href="#services">שירותים</a>
-    <a href="#portfolio">תיק עבודות</a>
-    <a href="#contact">צור קשר</a>
-  </nav>
-</header>
+  <section id="hero">
+    <h2>העוצמה שמניעה את העסק שלך קדימה</h2>
+    <p>פתרונות טכנולוגיים מתקדמים לעסקים מצליחים</p>
+    <button>ליצירת קשר עכשיו</button>
+  </section>
 
-<section class="hero" id="home">
-  <div class="hero-text">
-    <h2>טכנולוגיה חכמה, פתרונות בהתאמה אישית</h2>
-    <p>אני מספק פתרונות פיתוח מערכות מתקדמות שמייעלות את העסק שלך, חוסכות זמן וכסף, ומאפשרות לך להתמקד במה שחשוב באמת.</p>
-    <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">צור קשר עכשיו</button>
-  </div>
-  <div class="hero-image">
-    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="פיתוח טכנולוגי" />
-  </div>
-</section>
+  <section id="about">
+    <h2>אודות העסק</h2>
+    <p>העסק שלנו משלב ניסיון וחדשנות כדי להביא לך את הפתרונות הטובים ביותר בתחום הטכנולוגיה.</p>
+  </section>
 
-<section id="services">
-  <h3>השירותים שלי</h3>
-  <div class="services">
-    <div class="card">
-      <h4>פיתוח מערכות Microsoft Access</h4>
-      <p>מערכות מותאמות אישית לארגונים קטנים וגדולים, עם ממשקים ידידותיים ופתרונות מתקדמים.</p>
-    </div>
-    <div class="card">
-      <h4>בניית אפליקציות no-code/low-code</h4>
-      <p>פיתוח מהיר וגמיש עם פלטפורמות כמו Bubble ליצירת אפליקציות חכמות ללא צורך בקוד מורכב.</p>
-    </div>
-    <div class="card">
-      <h4>אוטומציות חכמות עם Make</h4>
-      <p>חיבור תהליכים ואוטומציה חכמה לחיסכון בזמן ולהפחתת טעויות בתהליכי העבודה.</p>
-    </div>
-  </div>
-</section>
+  <section id="services">
+    <h2>השירותים שלנו</h2>
+    <ul>
+      <li>פיתוח מערכות מתקדמות</li>
+      <li>ייעוץ טכנולוגי מותאם אישית</li>
+      <li>תמיכה ושירות ברמה גבוהה</li>
+    </ul>
+  </section>
 
-<section id="portfolio">
-  <h3>תיק עבודות נבחר</h3>
-  <div class="portfolio">
-    <div class="card">
-      <h4>מערכת ניהול מלאי</h4>
-      <p>פיתוח מערכת מותאמת לניהול מלאי, דוחות בזמן אמת ואופטימיזציה של התהליכים.</p>
-    </div>
-    <div class="card">
-      <h4>אפליקציית מעקב לקוחות</h4>
-      <p>בניית אפליקציה חכמה לניהול קשרי לקוחות, כולל התראות ומעקב יעיל.</p>
-    </div>
-    <div class="card">
-      <h4>אוטומציה לתהליכי שיווק</h4>
-      <p>יצירת אוטומציות שמחברות בין מערכות CRM, דוא"ל ורשתות חברתיות להגדלת התפוצה.</p>
-    </div>
-  </div>
-</section>
+  <section id="testimonials">
+    <h2>לקוחות ממליצים</h2>
+    <blockquote>"שירות מקצועי ואיכותי שהעלה את העסק שלי לשלב הבא!"</blockquote>
+    <cite>— יוסי כהן</cite>
+  </section>
 
-<section id="contact" style="background:#12263f; text-align:center; padding: 50px 40px;">
-  <h3>צור קשר</h3>
-  <p>רוצה לשמוע עוד? אני כאן לעזור לך לייעל ולהניע את העסק שלך קדימה.</p>
-  <button class="btn-primary" onclick="window.location.href='mailto:youremail@example.com'">שלח מייל עכשיו</button>
-</section>
+  <section id="contact">
+    <h2>צור קשר</h2>
+    <p>טלפון: 050-1234567</p>
+    <p>מייל: info@yourbusiness.co.il</p>
+  </section>
 
-<footer>
-  &copy; 2025 כל הזכויות שמורות
-</footer>
-
+  <footer>
+    <p>© כל הזכויות שמורות לעסק המודרני שלך 2025</p>
+  </footer>
 </body>
 </html>
