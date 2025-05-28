@@ -1,60 +1,71 @@
 <!DOCTYPE html>
 <html lang="he">
 <head>
-  <meta charset="UTF-8" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>העסק המודרני שלך</title>
-<link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פתרונות אוטומציה לעסקים</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>העסק המודרני שלך</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">אודות</a></li>
-        <li><a href="#services">שירותים</a></li>
-        <li><a href="#testimonials">לקוחות</a></li>
-        <li><a href="#contact">צור קשר</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section id="hero">
-    <h2>העוצמה שמניעה את העסק שלך קדימה</h2>
-    <p>פתרונות טכנולוגיים מתקדמים לעסקים מצליחים</p>
-    <button>ליצירת קשר עכשיו</button>
-  </section>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>הפוך את העסק שלך לחכם יותר עם פתרונות אוטומטיים מותאמים אישית</h1>
+            <p>שירותי ייעוץ, אוטומציה והקמת פתרונות טכנולוגיים לעסקים וארגונים</p>
+            <a href="#services" class="cta-button">גלה איך נוכל לעזור לעסק שלך</a>
+        </div>
+    </header>
 
-  <section id="about">
-    <h2>אודות העסק</h2>
-    <p>העסק שלנו משלב ניסיון וחדשנות כדי להביא לך את הפתרונות הטובים ביותר בתחום הטכנולוגיה.</p>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>עלינו</h2>
+            <p>אנחנו חברת טכנולוגיה המתמחה בהקמת פתרונות אוטומציה מותאמים אישית, ייעוץ טכנולוגי, ופיתוח תוכנה.</p>
+        </div>
+    </section>
 
-  <section id="services">
-    <h2>השירותים שלנו</h2>
-    <ul>
-      <li>פיתוח מערכות מתקדמות</li>
-      <li>ייעוץ טכנולוגי מותאם אישית</li>
-      <li>תמיכה ושירות ברמה גבוהה</li>
-    </ul>
-  </section>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>השירותים שלנו</h2>
+            <div class="service-card">
+                <h3>ייעוץ טכנולוגי</h3>
+                <p>אסטרטגיות מותאמות אישית לעסק שלך.</p>
+            </div>
+            <div class="service-card">
+                <h3>הקמת פתרונות אוטומטיים</h3>
+                <p>אוטומציה של תהליכים עסקיים.</p>
+            </div>
+            <div class="service-card">
+                <h3>פיתוח תוכנה</h3>
+                <p>שירותים מותאמים לכל שלב במעגל חיי המוצר.</p>
+            </div>
+        </div>
+    </section>
 
-  <section id="testimonials">
-    <h2>לקוחות ממליצים</h2>
-    <blockquote>"שירות מקצועי ואיכותי שהעלה את העסק שלי לשלב הבא!"</blockquote>
-    <cite>— יוסי כהן</cite>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>צור קשר</h2>
+            <form action="#" method="post">
+                <label for="name">שם מלא:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">אימייל:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">הודעה:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">שלח</button>
+            </form>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2>צור קשר</h2>
-    <p>טלפון: 050-1234567</p>
-    <p>מייל: info@yourbusiness.co.il</p>
-  </section>
-
-  <footer>
-    <p>© כל הזכויות שמורות לעסק המודרני שלך 2025</p>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 פתרונות אוטומציה לעסקים</p>
+        </div>
+    </footer>
+    
 </body>
 </html>
