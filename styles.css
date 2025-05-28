@@ -1,254 +1,146 @@
-/* כללי */
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap');
-
+/* Reset styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body */
 body {
-  font-family: 'Assistant', sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #e0e0e0;
-  line-height: 1.6;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  animation: backgroundShift 15s ease-in-out infinite alternate;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
 }
 
-@keyframes backgroundShift {
-  0% {background-position: 0% 50%;}
-  100% {background-position: 100% 50%;}
+/* Header */
+.header {
+    background-image: url('office-modern.jpg'); /* כאן תשים את התמונה של המשרד המודרני */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
 }
 
-header {
-  background-color: rgba(20, 30, 40, 0.85);
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid #42f5e9;
-  box-shadow: 0 0 15px #42f5e9;
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
-header h1 {
-  font-weight: 700;
-  font-size: 2rem;
-  color: #42f5e9;
-  letter-spacing: 2px;
-  text-shadow: 0 0 10px #42f5e9;
+.header p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
+.cta-button {
+    background-color: #FF7F00;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #e0e0e0;
-  font-weight: 600;
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+.cta-button:hover {
+    background-color: #FF6F00;
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
-  background-color: #42f5e9;
-  color: #0f2027;
-  box-shadow: 0 0 8px #42f5e9;
+/* About Section */
+.about {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-#hero {
-  text-align: center;
-  padding: 5rem 1rem;
-  background: rgba(66, 245, 233, 0.1);
-  border-radius: 12px;
-  margin: 2rem auto;
-  max-width: 900px;
-  box-shadow: 0 0 30px #42f5e9;
-  animation: fadeInUp 1.5s ease forwards;
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-#hero h2 {
-  font-size: 3rem;
-  color: #42f5e9;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 12px #42f5e9;
+.about p {
+    font-size: 1.2rem;
 }
 
-#hero p {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  color: #d1f7f3;
+/* Services Section */
+.services {
+    padding: 40px 20px;
+    text-align: center;
 }
 
-#hero button {
-  background-color: #42f5e9;
-  color: #0f2027;
-  border: none;
-  padding: 1rem 2.5rem;
-  font-size: 1.2rem;
-  font-weight: 700;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.4s ease, transform 0.3s ease;
-  box-shadow: 0 0 15px #42f5e9;
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
 }
 
-#hero button:hover {
-  background-color: #2bc5be;
-  transform: scale(1.05);
-  box-shadow: 0 0 25px #2bc5be;
+.service-card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 28%;
 }
 
-section {
-  max-width: 900px;
-  margin: 3rem auto;
-  padding: 0 1rem;
-  background: rgba(20, 30, 40, 0.85);
-  border-radius: 12px;
-  box-shadow: 0 0 25px #42f5e9;
-  animation: fadeInUp 1s ease forwards;
+.service-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
 }
 
-section h2 {
-  color: #42f5e9;
-  font-size: 2.25rem;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 8px #42f5e9;
-  border-bottom: 2px solid #42f5e9;
-  padding-bottom: 0.5rem;
+.service-card p {
+    font-size: 1.1rem;
+    color: #555;
 }
 
-ul {
-  list-style: none;
-  color: #c0e9e6;
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
+/* Contact Section */
+.contact {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-ul li {
-  margin-bottom: 0.6rem;
-  position: relative;
-  padding-left: 20px;
-  animation: slideInLeft 0.7s ease forwards;
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
 }
 
-ul li::before {
-  content: '✔';
-  position: absolute;
-  left: 0;
-  color: #42f5e9;
-  text-shadow: 0 0 4px #42f5e9;
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
 }
 
-blockquote {
-  font-style: italic;
-  color: #a0dede;
-  border-left: 4px solid #42f5e9;
-  padding-left: 1rem;
-  margin: 1rem 0;
-  font-size: 1.1rem;
-  text-shadow: 0 0 6px #42f5e9;
-  animation: fadeInLeft 1s ease forwards;
+.contact label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: block;
 }
 
-cite {
-  display: block;
-  text-align: right;
-  color: #69e9e4;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  font-size: 1rem;
-  animation: fadeInRight 1s ease forwards;
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-#contact p {
-  font-size: 1.1rem;
-  margin: 0.5rem 0;
-  color: #c0e9e6;
+.contact button {
+    background-color: #FF7F00;
+    padding: 15px 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem 0;
-  background-color: #0f2027;
-  color: #42f5e9;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  box-shadow: 0 -3px 15px #42f5e9;
-  animation: fadeIn 2s ease forwards;
+.contact button:hover {
+    background-color: #FF6F00;
 }
 
-/* אנימציות */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
-
-@keyframes slideInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/* תגובתיות */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-  #hero h2 {
-    font-size: 2rem;
-  }
-}
-
